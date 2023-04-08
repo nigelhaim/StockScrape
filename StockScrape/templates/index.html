@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+	<h1>HTML STOCK PICKER</h1>
+	<div id="stock-picker">
+		<label for="stock">Choose a stock: </label>
+		<form action="/getStockData" method="post">
+			<select class="stock-selector" id = "stock-selector-id" onchange="selected_Stock()" name="stock">
+				<option value="PSEi">PSEi</option>
+			</select>
+		</form>
+		<label>   |   </label>
+		<label id="stock_name">Philippine stock exchange</label>
+	</div>
+	<br>
+	<div id="main">
+		<div id="stock-info">
+			<h1 id="percent-change"></h1>
+			<h1 id="price-amount"></h1>
+			<h1 id="volume"></h1>
+		</div>
+		<div id = 'group-show-posts'>
+			<h1 id="site-name">
+				Twitter
+			</h1>
+			<div id='show-posts'>
+				<h1>Posts</h1>
+			</div>
+		</div>
+	</div>
+{% endblock %}

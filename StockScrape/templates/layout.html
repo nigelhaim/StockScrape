@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML stock picker</title>
+		<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/> 
+	</head>
+	<body>
+		<h1>StockScrape</h1>
+		{% block body %}
+		{% endblock %}
+		<script src="{{url_for('static', filename='Stock_Selector.js')}}"></script>
+		<script src="{{url_for('static', filename='PSE_Edge.js')}}"></script>
+	</body>
+	
+</html>

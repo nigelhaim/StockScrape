@@ -1,0 +1,129 @@
+:root{
+    --Font_color_mode: rgb(0, 255, 149);
+    --Background_color: rgb(28, 28, 28);
+}
+html{
+    font-family: consolas;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+body{
+    background-color: var(--Background_color);
+    position: relative;
+    left: 5%;
+    top: 50px;
+}
+
+
+h1{
+    color: var(--Font_color_mode);
+}
+label{
+    color: var(--Font_color_mode);
+    margin: 5px;
+    margin-left: 0px;
+}
+select{
+    border-bottom: 5px solid var(--Font_color_mode);
+    background-color: transparent;
+    color: var(--Font_color_mode);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100px;
+}
+option{
+    background-color: var(--Background_color);
+}
+
+#stock-picker{
+    font-size: 24px;
+    display: flex;
+}
+
+#loading{
+    color: var(--Font_color_mode);
+}
+
+#group-show-posts{
+    /*background-color: red;*/
+    width: 60%;
+    float: right;
+    margin-right: 5%;
+    top:10px;
+}
+
+#stock-info{
+    /*background-color: blue;*/
+    width: 30%;
+}
+
+#main{
+    display: flex;
+}
+#show-posts{
+    overflow-y: scroll;
+    height: 60vh;
+    width: 100%;
+}
+#post{
+    position: relative;
+    width: 50%;
+    color: var(--Font_color_mode);
+    margin-left: 0px;
+    margin: 20px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--Font_color_mode);
+    border-bottom-style: dashed;
+    padding-bottom: 20px;
+    /*background-color: green;*/
+    width: 90%;
+}
+
+#displayname{
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--Font_color_mode);
+    margin: none;
+}
+#displayname:hover{
+    color: orangered;
+}
+#post_link{
+    text-decoration: none;
+    color: var(--Font_color_mode);
+}
+#post_link:hover{
+    color: orangered;
+}
+#content{
+    font-size: 24px;
+}
+
+
+/*Custom scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: 0px; 
+  border-radius:0px
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--Font_color_mode); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
