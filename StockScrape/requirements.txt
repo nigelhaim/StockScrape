@@ -2,3 +2,11 @@ pip install scrapy
 pip install snscrape
 
 npm i pse-edge
+
+npm i cors express nodemon
+
+npm install express -g
+
+npm install -l
+
+ npm install parallelshell

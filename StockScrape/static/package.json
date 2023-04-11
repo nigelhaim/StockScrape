@@ -1,5 +1,18 @@
 {
+  "name": "static",
+  "version": "1.0.0",
+  "main": "PSE_Edge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "pse-edge": "^1.0.4"
+    "cors": "^2.8.5",
+    "http": "^0.0.1-security",
+    "pse-edge": "^1.0.4",
+    "uniq": "^1.0.1"
   }
 }
